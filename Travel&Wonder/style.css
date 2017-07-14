@@ -1,0 +1,443 @@
+
+.........................................../* MEDIA QUERRY FILE TABLETS */...................................
+
+@media only screen and (max-width: 768px) /* if the screen is less than 768PX than */
+{
+
+		.main-wrapper
+		{
+			width:auto;
+		}	
+		header
+		{
+			width:auto;
+		}
+		.subheader
+		{
+			width:auto;
+		}
+}	
+
+@media all and (max-width: 768px)
+{
+
+	.main-wrapper
+	{
+		max-width:768px;
+		overflow:hidden;
+	}
+
+	.subheader .p
+	{
+		font-size:30px;
+		text-align:center;
+		width:100%;
+	}
+	.subheader .left
+	{
+		float:none;
+		padding-bottom:10px;
+		padding-top:10px;
+		width:100%;
+	}
+	.subheader .right
+	{
+		float:none;
+		padding-bottom:0;
+		padding-top:0;
+		width:100%;
+	}
+	.subheader .parent
+	{
+		padding-top:0;
+	}
+	.relative img
+	{
+		width:100%;
+		height:auto;
+	}
+    .link
+	{
+
+		float:left;
+		margin-right:10px;
+	}
+
+	footer  .footer-link
+	{
+		float:left;
+
+	}
+	.title{ display:none;}
+	header .center
+	{
+		position:absolute;
+		top: 55%;
+		left:20%;
+	}
+	.center p
+	{
+		line-height:5px;
+	}
+	.center .button
+	{
+		width:100px;
+	}
+	header .size-responsive
+	{
+		font-size:20px;
+	}
+	.align-text-center
+	{
+		margin-top:-40px;
+	}
+	.subheader .relative img 
+	{
+		padding-top:20px;
+	}
+	.subheader .center-text
+	{
+		left:0;
+	}
+	
+	.image3 p
+	{
+		font-size:40px;
+		width:100%;
+		line-height:30px;
+	}
+	.image3 .p-res
+	{
+		font-size:20px;
+		line-height:0px;
+		padding-top:20px;
+	}
+	.subheader .image3
+	{
+		top:40%;
+		left:0%;
+		overflow:hidden;
+	}
+	.subheader .input
+	{
+		overflow:hidden;
+		margin-left:0;
+		width:100%;
+	}
+
+}
+
+.........................................../* MEDIA QUERRY PHONE 480PX PORTRAIT ORIENTATION */ .....................................
+
+@media screen and (max-device-width: 480px) and (orientation: portrait)
+{
+	.main-wrapper
+		{
+			width:auto;
+		}	
+		header
+		{
+			width:auto;
+		}
+		.subheader
+		{
+			width:auto;
+		}
+	
+}
+
+@media all and (max-width: 480px)
+{
+
+	.main-wrapper
+	{
+		max-width:480px;
+		overflow:hidden;
+	}
+	header .link
+	{
+		font-size: 20px;
+	}
+	header p
+	{
+		font-size:15px;
+	}
+	.subheader .image3
+	{
+s		word-wrap: break-word;
+		width:100%;
+		margin-top:5px;
+	
+	}
+	.image3 p
+	{
+		font-size:15px;
+		width:100%;
+		line-height:25px;
+	}
+	
+	.image3 .text p
+	{
+		font-size:10px;
+		padding-top:5px;
+		
+	}
+	.image3 .text
+	{
+		padding-top: 10px;
+	}
+	.subheader .p
+	{
+		font-size:15px;
+	}
+	footer .footer-link
+	{
+		font-size: 20px;
+	}
+}
+.........................................../* CSS FILE */ .....................................
+
+html
+{
+	background-color:black;
+}
+
+.main-wrapper
+{
+	margin: 0 auto;
+	width:1144px;
+	background-color:rgb(235,235,235);
+}
+
+.relative
+{
+	position:relative;
+}
+
+.absolute
+{
+	position:absolute;
+}
+.white
+{
+	color:white;
+}
+
+.italic
+{
+	font-style: italic;
+}
+
+.size
+{
+	font-size:25px;
+}
+
+.navigation
+{
+	top: 0;
+}
+
+.title
+{
+	line-height:10px;
+	width:30%;
+	float:left;
+}
+.menu-bar
+{
+	float:right;
+	margin-right:10px;
+}
+.menu-bar li {
+	display:inline-block;
+}
+
+.menu-bar a 
+{
+	color:white;
+	text-decoration:none;
+	padding:10px;
+}
+
+
+.nav-bar
+{
+	width:100%;
+}
+.padding-left
+{
+	padding-left:70px;
+}
+.center
+{
+	left:25%;
+	top: 55%;
+}
+
+.align-text-center
+{
+	text-align:center;
+
+}
+
+.bold
+{
+	font-weight:bold;
+	vertical-align:bottom;
+}
+
+.line-height
+{
+	line-height:15px;
+}
+
+.padding-top
+{
+	padding-top:50px;
+}
+.input
+{
+	width:80%;
+	margin: 0 auto;
+}
+.email
+{
+	margin-top: -25px;
+	overflow:hidden;
+}
+
+.email input
+{
+	height:40px;
+	width:60%;
+    text-indent: 30px;
+    text-indent: 30px;
+	vertical-align:middle;
+
+}
+.email button 
+{
+	background-color:green;
+	height:44px;
+	width:25%;
+	border:none;
+	margin-left: -4px;
+	vertical-align:middle;
+}
+
+.size-title
+{
+	font-size:50px;
+}
+
+.left
+{
+	float:left;
+	width:50%;
+
+}
+
+.right
+{
+	float:right;
+	width:50%;
+
+}
+
+.text-color-grey
+{
+	color:rgb(96,96,96);
+}
+
+.padding-bottom
+{
+	padding-bottom: 50px;
+}
+.padding-right
+{
+	padding-right: 70px;
+}
+.justify
+{
+	text-align:justify;
+}
+.center-text
+{
+	left: 35%;
+	top:30%;
+}
+
+.clearfix
+{
+	clear:both;
+}
+.overflow-fix
+{
+	overflow:hidden;
+}
+.table
+{
+	width:90%;
+}
+
+.left p
+{
+	width:90%;
+
+}
+.image3
+{
+	top:30%;
+	left:10%;
+}
+.shadow
+{
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+table .bold
+{
+	vertical-align:bottom;
+}
+.td-up
+{
+	vertical-align:top;
+}
+
+.text
+{
+	margin-top:-35px;
+	line-height:5px;
+}
+
+.border input
+{
+	border-left: 1px solid #80ffaa;
+	border-top:1px solid #80ffaa;
+	border-bottom:1px solid #80ffaa;
+}
+
+.border button
+{
+	border-right: 1px solid #80ffaa;
+	border-top:1px solid #80ffaa;
+	border-bottom:1px solid #80ffaa;
+}
+.border
+{
+		margin-bottom: 80px;
+}
+.footer-link a
+{
+	color:rgb(96,96,96);
+	padding:10px;
+}
+
+.up
+{
+	vertical-align:top;
+}
