@@ -1,0 +1,447 @@
+
+/* ANIMATIOS KEYFRAMES ------------------------------------------------- */
+@keyframes mymove {
+   from {margin-top: -30px;}
+    to {margin-top: -10px;}
+}
+@keyframes mymove2 {
+   from {margin-top: 10px;}
+    to {margin-top: 20px;}
+}
+
+
+.main-wrapper
+{
+	width:100%;
+	height:100vh;
+
+}
+
+/* title HEADER FIXED ------------------------------------------------- */
+.header-title
+{
+	font-size:40px;
+	font-weight:bold;
+	background-color:rgb(40,40,40);
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	height: 110px;
+	z-index:1999;
+}
+
+.header-title img
+{
+	width:200px;
+	position:relative;
+	vertical-align:middle;
+	z-index:1000;
+}
+
+.white
+{
+	color:white;
+}
+
+/* sidebar ------------------------------------------------- */
+
+#parent 
+{
+	margin-top:120px;
+	overflow:hidden;
+	margin-left:80px;
+	background-color:rgb(56,56,56);
+}
+
+.side-navigation
+{
+	position:fixed;
+	top:110px;
+    left: 0px;
+    bottom: 0px;
+	width:80px;
+	z-index:100;
+	overflow: auto;
+	background-color:rgb(40,40,40);
+	color:white;
+	height:100vh;
+	border-top: 10px solid white;
+
+}
+
+.link-menu table
+{
+	margin-left:10px;
+	margin-top:15px;
+}
+
+.link-menu table tr td:first-child
+{
+	display:block;
+	-webkit-transition: width 20s; /* For Safari 3.1 to 6.0 */
+    transition: width 20s;
+	padding: 10px;
+}
+
+.link-menu a
+{
+	display:block;
+	border:1px solid rgb(50,50,50);
+	visibility:hidden;
+	padding: 20px;
+	text-decoration:none;
+	color:white;
+	cursor:pointer;
+}
+
+.text-shadow
+{
+	
+	text-shadow: #000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+				#000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px;
+}
+
+.align-text-center
+{
+	text-align:center;
+}
+
+.relative
+{
+	position:relative;
+}
+.absolute
+{
+	position:absolute;
+}
+.font-size
+{
+	font-size:50px;
+}
+
+.center
+{
+	top: 35%;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 700px;
+	text-align:center;
+}
+.white
+
+{
+	color:white;
+}
+.bold
+{
+	font-weight:bold;
+}
+.padding
+{
+	padding:30px;
+}
+.size
+{
+	font-size:50px;
+}
+
+.fa-5x {
+  font-size: 10em !important;
+  margin-top:-60px;
+ }
+ 
+/*-------------------------VIDEO----------------------------*/
+.videoDiv 
+{
+	position: relative;
+    min-width:100% !important;
+    height:82% !important;
+    z-index: 1;
+    margin:0;
+    padding:0;
+	top:-100px;
+
+}
+#video
+{
+
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+	
+}
+
+.border
+{
+	border: 2px solid white;
+}
+
+
+.button
+{
+	animation-name: mymove;
+	animation-direction: alternate;
+	animation-duration: 2s; /* or: Xms */
+	animation-iteration-count: infinite;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 200px;
+	text-align:center;
+	cursor:pointer;
+	z-index:3;
+}
+.button-img
+{
+	width:200px;
+	height:70px;
+	display:block;
+}
+.image-restaurant
+{
+	margin-top:-100px;
+}
+
+.p
+{
+margin-top:-30px;
+padding:10px;
+}
+
+.button2
+{
+	animation-name: mymove2;
+	animation-direction: alternate;
+	animation-duration: 2s; /* or: Xms */
+	animation-iteration-count: infinite;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 200px;
+	text-align:center;
+	cursor:pointer;
+	z-index:3;
+}
+.parallax
+{
+	
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 750px; 
+}
+
+.img1
+{
+	background-image:url(images/Restaurant.jpg);
+}
+.img2
+{
+	background-image:url(images/events.jpg);
+}
+.img3
+{
+	background-image:url(images/awards.jpg);
+}
+
+.img4
+{
+	background-image:url(images/bar.jpg);
+}
+
+.img5
+{
+	background-image:url(images/gift.jpg);
+}
+
+.img6
+{
+	background-image:url(images/luxury.jpg);
+}
+
+.bar
+{
+	position:relative;
+	width:100%;
+	height: 5px;
+	background-color:white;
+}
+.color
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:20%;
+	height:5px;
+	background-color: #74C8D1;
+}
+.top
+{
+	margin-top:30px;
+}
+.gallery
+{
+	padding-right:60px;
+	padding-left:60px;
+}
+.grid
+{
+	margin-top:60px;
+	overflow:hidden;
+	max-width:100%;
+}
+.paragraf
+{
+	padding:30px;
+}
+.menu-grid img,
+{
+	max-height:100%;
+	max-width:100%;
+}
+
+.left
+{
+	float:left;
+}
+.menu-grid
+{
+	border:2px double white;
+	background-image: cover;
+	height: auto;
+}
+
+.grid-size
+{
+	width:50%;
+}
+.clearfix
+{
+	clear:both;
+}
+.italic
+{
+	font-style:italic;
+}
+
+.right
+{
+	float:right;
+}
+
+.events
+{
+	color:white;
+}
+.events td
+{
+	width:50%;
+	padding-top:5%;
+
+}
+
+.awards td
+{
+	width:10%;
+	color:white;
+	text-align: left;
+	padding-top:50px;
+
+}
+.awards img
+{
+ width:200px;
+}
+.color-h1
+{
+		color: #07cfbd;
+}
+.justify
+{
+	text-align:justify;
+}
+.grid table img
+{
+  width: 70%;
+  display: block;
+  border-radius:100%;
+  height:400px;
+  margin-left:10%;
+}
+.guests
+{
+	background-color:#07cfbd;
+	width:50%;
+	border-collapse: collapse;
+}
+
+.guests td
+{
+	padding:10px;
+	border:1px solid black;
+}
+
+.footer-logo
+{
+	height:120px;
+}
+.delimiter
+{
+	height:100px;
+	width:100px;
+	top:10px;
+	bottom:10px;
+	left:47%;
+}
+.delimiter img
+{
+	width:100%;
+	height:100%;
+}
+
+.btn-input
+{
+	margin-left:30%;
+}
+.btn-input button
+{
+	height:60px;
+	width: 350px;
+	background-color:#07cfbd;
+}
+.line-height
+{
+	line-height:5px;
+}
+.padding-top
+{
+	padding-top:20px;
+}
+
+.map-image
+{
+	width:70%;
+	height:100%;
+	margin-left:100px;
+}
+.gallery a
+{
+	color:#07cfbd;
+}
+/*............................................ HOVER EFFECTS and transitions.................................*/
+
+.link-menu a:hover
+{
+	background-color:rgb(32,32,32);
+	border: 1px solid white;
+	
+}
+

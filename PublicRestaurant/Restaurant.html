@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>PUBLIC </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/animate.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="screen" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="http://www.tutorialspoint.com/jquery/jquery-ui-1.7.2.custom.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<script>
+
+	</script>
+</head>
+
+<body>
+	<div class="main-wrapper">
+		<div class="header-title align-text-center white">
+			<img src="images/logo.png" alt="logo">
+		</div>
+		<!-- Parent section - right side scrolling -->
+		<div id="parent">
+			<!-- fixed navigation, animation style, push content right -->
+				<nav id="link" class="side-navigation align-text-center text-shadow" onmouseover="mouseOver()" onmouseout="mouseOut()">
+					<div class="link-menu">
+						<table>
+							<tr>
+								<td> <i class="fa fa-globe fa-2x" aria-hidden="true"></i> </td>
+								<td> <a href="#discover" class="discover"> DISCOVER</a></td>
+							</tr>
+							
+							<tr>
+								<td> <i class="fa fa-cutlery fa-2x" aria-hidden="true"></i> </td>
+								<td> <a href="#menu" class="menu">MENUS</a></td>
+							</tr>
+							
+							<tr>
+								<td> <i class="fa fa-music fa-2x" aria-hidden="true"></i> </td>
+								<td> <a href="#events" class="events">FUNCTIONS AND EVENTS</a> </td>
+							</tr>
+							
+							<tr>
+								<td> <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>  </td>
+								<td> <a href="#awards" class="awards">AWARDS</a> </td>
+							</tr>
+							
+							<tr>
+								<td> <i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i> </td>
+								<td> <a href="#what" class="what">WHAT'S ON</a></td>
+							</tr>
+							
+							<tr>
+								<td> <i class="fa fa-gift fa-2x" aria-hidden="true"></i></td>
+								<td> <a href="#gift"  class="gift">GIFT VOUCHERS</a> </td>
+							</tr>
+							
+							<tr>
+								<td> <i class="fa fa-phone fa-2x" aria-hidden="true"></i> </td>
+								<td> <a href="#contact"  class="contact">CONTACT</a></td>
+							</tr>
+							
+							<tr>
+								<td> <i class="fa fa-sign-in fa-2x" aria-hidden="true"></i> </td>
+								<td> <a href="#">SIGN UP</a> </td>
+							</tr>
+							
+						</table>
+					</div>
+				</nav>
+				
+			<!-- define the video container with relative positioning and text/button absolute positioning -->
+			<div id="discover">
+				<div class="videoDiv">
+					<div class="videoBlock">
+						 <video preload="preload" id="video" autoplay="autoplay" loop="loop">
+							 <source src="video/video2.mp4" type="video/mp4"></source>
+						 </video>
+					</div>
+					<div   class=" center absolute white">
+						<p class="size bold white border padding text-shadow"> DISCOVER SUR-LIE </p>
+						<div class=" relative button">
+							<a href="#menu"><img src="images/arrow.png" alt="button"  class="button-img"> </img> </a>
+						</div>
+					</div>
+				</div>		
+			</div>
+			
+			<!-- Create a parallax image background effect -->
+			<div class="image-restaurant relative parallax img1" id="menu">
+				<div class=" center absolute white">
+					<div class="align-text-center  white border  text-shadow">
+						<p class="size bold"> OUR MENU </p>
+						<p class="p"> Our menu has been created around the ethos of fun with finesse. We are a fine dining experience, with the excitement of a more casual environment. </p>
+					</div>
+						<div class=" relative button2">
+							<a href="#menu"><img src="images/arrow.png" alt="button" class="button-img"> </img> </a>
+						</div>
+				</div>
+			</div>
+			
+			<!-- Photo grid view -->
+			<div class="gallery">
+				<h1> GALLERY </h1>
+				<!-- Title bar underline -->
+				<div class="bar">
+					<div class="color">	</div>
+				</div>
+			
+				<div class="grid">
+					<div class="grid-size menu-grid left">
+						<img src="images/1.jpg"> </img>
+					</div>
+					
+					<div class="grid-size menu-grid left">
+						<img src="images/2.jpg"> </img>
+					</div>
+					
+					<div class="grid-size menu-grid left">
+						<img src="images/3.jpg"> </img>
+					</div>
+					
+					<div class="grid-size menu-grid left">
+						<img src="images/4.jpg"> </img>
+					</div>
+					
+					<div class="grid-size menu-grid left">
+						<img src="images/5.jpg"> </img>
+					</div>
+					
+					<div class="grid-size menu-grid left">
+						<img src="images/6.jpg"> </img>
+					</div>
+					
+					<div class="grid-size menu-grid left">
+						<img src="images/7.jpg"> </img>
+					</div>
+					
+					<div class="grid-size menu-grid left">
+						<img src="images/8.jpg"> </img>
+					</div>
+					
+					<div class="grid-size menu-grid left">
+						<img src="images/9.jpg"> </img>
+					</div>
+					
+					<div class="grid-size menu-grid left">
+						<img src="images/10.jpg"> </img>
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer-logo relative clearfix">
+				<div class="absolute delimiter">
+					<img src="images/delimiter.ico"> </img>
+				</div>
+			</div>
+			
+			<!-- Create a parallax image background effect -->
+			<div class=" clearfix relative parallax img2" id="events">
+				<div class=" center absolute white">
+					<div class=" size bold align-text-center  white border  text-shadow">
+						<p> FUNCTIONS, EVENTS </p>
+						<p > & PARTIES  </p>
+					</div>
+						<div class=" relative button2">
+							<a href="#menu"><img src="images/arrow.png" alt="button" class="button-img"> </img> </a>
+						</div>
+				</div>
+			</div>
+
+			<!-- grid -->
+			<div class="gallery">
+				<div class="grid ">
+
+					<div class="white bold italic left ">
+						<p> Public is a diverse venue with a variety of spaces on offer for functions, events and parties. We have two private dining rooms; The Library and The Dining Room, both can be used for private dining, while The Dining Room also offers boardroom capabilities. </p>
+					</div>
+					<div class="white bold italic left">
+						<p>The main restaurant and bar is also available for select full or partial venue hire. Please email info@restaurant.public.com for further information and availability. </p>
+					</div>
+					<table class="events bold">
+					
+						<tr>
+							<td>
+								<img src="images/dinning.jpg" alt="dinning"> </img>
+							</td>
+							<td>
+								<h1 class="color-h1"> The Dining Room </h1>
+								<p> A versatile space that can be used for both private dining and out of office board room meetings, this rooms seats 20 and also has the benefits of full connectivity for projected or amplified display. </p>
+								</br>
+								<p>MAXIMUM GUESTS </p>
+								<table class="guests">
+									<tr>
+										<td>
+											Banquet
+										</td>
+										<td>
+											22
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Cocktail
+										</td>
+										<td>
+											24
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<img src="images/library.jpg" alt="dinning"> </img>
+							</td>
+							<td>
+								<h1 class="color-h1"> The Library </h1>
+								<p>The library is ideal for a more casual meeting or relaxed dinner seating up to 12. Couches and armchairs are yours to recline in here, with full waiting service for drinks, snacks or a full meal.</p>
+								</br>
+								<p>MAXIMUM GUESTS </p>
+								<table class="guests">
+									<tr>
+										<td>
+											Banquet
+										</td>
+										<td>
+											12
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Cocktail
+										</td>
+										<td>
+											25
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="images/upstairs.jpg" alt="dinning"> </img>
+							</td>
+							<td>
+								<h1 class="color-h1"> Exclusive Upstairs </h1>
+								<p>By combining the two upstairs spaces we are able to provide a versatile experience that can incorporate a private drinks reception, then move seamlessly into a sit down dinner, all in your own private space. Alternatively we can host stand up cocktail drinks receptions over the two spaces.</p>
+								</br>
+								<p>MAXIMUM GUESTS </p>
+								<table class="guests">
+									<tr>
+										<td>
+											Cocktail
+										</td>
+										<td>
+											60
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>		
+					
+				</div>
+			</div>
+			
+			<div class="footer-logo relative clearfix">
+						<div class="absolute delimiter">
+							<img src="images/delimiter.ico"> </img>
+						</div>
+			</div>
+			
+			<!-- Create a parallax image background effect -->
+			<div class="relative parallax img3" id = "awards">
+				<div class=" center absolute white">
+					<div class="align-text-center  white border  text-shadow">
+						<p class="size bold">AWARD WINNING </p>
+					</div>
+						<div class=" relative button2">
+							<a href="#menu"><img src="images/arrow.png" alt="button" class="button-img"> </img> </a>
+						</div>
+				</div>
+			</div>
+			
+			<div class="gallery top">
+				<div class="">
+					<div class="grid-size left">
+					<table class="awards">
+						<tr>
+							<td>
+								<img src="images/award1.png" alt="award"> </img>
+							</td>
+							<td>
+								<p> 2016 Winner of "Best For Parties & Groups",</p> 
+								<p>"Best For Special Occasion" and "Top 100"</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="images/award2.png" alt="award"> </img>
+							</td>
+							<td>
+								<p> Winner of ”Best New Restaurant” and awarded “One Chefs Hat” Queensland Good Food Guide Awards 2012 / 2013 / 2014 / 2015 / 2016</p> 
+
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="images/award3.png" alt="award"> </img>
+							</td>
+							<td>
+								<p> Winner of ‘Best Bar Food’ – Australian Bar Awards 2013/2014</p> 
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="images/award4.png" alt="award"> </img>
+							</td>
+							<td>
+								<p> Winner of 'Certificate of Excellence' 2014/2016</p> 
+							</td>
+						</tr>
+					</table>
+					</div>
+					<div class="grid-size left paragraf white bold italic justify">
+						<p class=""> Perched above the hustle of Brisbane’s CBD, on the first floor of 400 George Street, Public has burst onto the Brisbane dining scene with gusto since opening its doors in 2012.  Public offers an innovative and engaging dining experience with a clever, contemporary menu of share plates that are flawlessly executed. Combining New Yorks sophistication with Brisbane’s warmth,  this venue has a number of different spaces including our main dining room, two private dining rooms and a welcoming bar. Whether you drop by for a long lunch with colleagues, a romantic dinner for two, or simply treat yourself to cocktails in the bar; we’ve got you covered. </p>
+						<p>Combining New Yorks sophistication with Brisbane’s warmth,  this venue has a number of different spaces including our main dining room, two private dining rooms and a welcoming bar. </p>
+						<p> Whether you drop by for a long lunch with colleagues, a romantic dinner for two, or simply treat yourself to cocktails in the bar; we’ve got you covered. </p>
+						<p class=""> Perched above the hustle of Brisbane’s CBD, on the first floor of 400 George Street, Public has burst onto the Brisbane dining scene with gusto since opening its doors in 2012.  Public offers an innovative and engaging dining experience with a clever, contemporary menu of share plates that are flawlessly executed. Combining New Yorks sophistication with Brisbane’s warmth,  this venue has a number of different spaces including our main dining room, two private dining rooms and a welcoming bar. Whether you drop by for a long lunch with colleagues, a romantic dinner for two, or simply treat yourself to cocktails in the bar; we’ve got you covered. </p>
+						<p>Combining New Yorks sophistication with Brisbane’s warmth,  this venue has a number of different spaces including our main dining room, two private dining rooms and a welcoming bar. </p>
+						<p> Whether you drop by for a long lunch with colleagues, a romantic dinner for two, or simply treat yourself to cocktails in the bar; we’ve got you covered. </p>
+						<p class=""> Perched above the hustle of Brisbane’s CBD, on the first floor of 400 George Street, Public has burst onto the Brisbane dining scene with gusto since opening its doors in 2012.  Public offers an innovative and engaging dining experience with a clever, contemporary menu of share plates that are flawlessly executed. Combining New Yorks sophistication with Brisbane’s warmth,  this venue has a number of different spaces including our main dining room, two private dining rooms and a welcoming bar. Whether you drop by for a long lunch with colleagues, a romantic dinner for two, or simply treat yourself to cocktails in the bar; we’ve got you covered. </p>
+					
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer-logo relative clearfix">
+						<div class="absolute delimiter">
+							<img src="images/delimiter.ico"> </img>
+						</div>
+			</div>
+
+			<!-- Create a parallax image background effect -->
+			<div class="relative parallax img4" id="what">
+				<div class=" center absolute white">
+					<div class="align-text-center  white border  text-shadow">
+						<p class="size bold">WHAT'S ON </p>
+					</div>
+						<div class=" relative button2">
+							<a href="#menu"><img src="images/arrow.png" alt="button" class="button-img"> </img> </a>
+						</div>
+				</div>
+			</div>
+			
+			<div class="gallery">
+				<p class="white italic"> Submissions for this form are currently disabled - please try again later.</p>
+			</div>
+			
+			<div class="footer-logo relative clearfix">
+						<div class="absolute delimiter">
+							<img src="images/delimiter.ico"> </img>
+						</div>
+			</div>
+			
+			<!-- Create a parallax image background effect -->
+			<div class="relative parallax img5" id="gift">
+				<div class=" center absolute white">
+					<div class="align-text-center  white border  text-shadow">
+						<p class="size bold">GIFT VOUCHERS<!-- Create a parallax image background effect --> </p>
+					</div>
+						<div class=" relative button2">
+							<a href="#menu"><img src="images/arrow.png" alt="button" class="button-img"> </img> </a>
+						</div>
+				</div>
+			</div>
+			
+			<div class="gallery">
+				<div class="grid">
+					<div class="grid-size left white italic align-text-center">
+						<p> A Public Gift Voucher is the ideal gift to celebrate a special occasion such as a Birthday, Anniversary or Wedding and also makes that perfect thank you gift.  </p>
+						<p> Gift vouchers can be purchased for Lunch or Dinner and are available for your chosen amount. </p>
+						<p> Gift Vouchers are valid for 1 year from the date of purchase and must be used within this time frame.  </p>
+						<p>If you would like to purchase a gift voucher. Please complete the voucher form and return via email. </p>
+					</div>
+					
+					<div class="grid-size left">
+						<div class="btn-input">
+							<button type="button" onclick="window.open('http://d16j3q7p3jg4o6.cloudfront.net/wp-content/uploads/2016/11/Voucher-Request-Form.pdf')"> 
+								DOWNLOAD A VOUCHER FORM </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer-logo relative clearfix">
+						<div class="absolute delimiter">
+							<img src="images/delimiter.ico"> </img>
+						</div>
+			</div>
+			
+			<!-- Create a parallax image background effect -->
+			<div class="image-restaurant relative parallax img6" id="contact">
+				<div class=" center absolute white">
+					<div class="align-text-center  white border  text-shadow">
+						<p class="size bold"> FIND US </p>
+						<p class="p"> We are located on the corner of George and Turbot street, in Brisbanes CBD. Up the escalator on the first floor of 400 George, opposite the new Brisbane Magistrate High court. </p>
+					</div>
+						<div class=" relative button2">
+							<a href="#menu"><img src="images/arrow.png" alt="button" class="button-img"> </img> </a>
+						</div>
+				</div>
+			</div>
+			
+			<div class="gallery">
+				<div class="grid">
+					<div class="grid-size left white align-text-center line-height">
+						<p class="padding-top"> <strong>P:</strong> 07 3210 2288  </p>
+						<p> <strong>A: </strong> 
+							<a href="https://www.google.com.au/maps/place/400+George,+400+George+St,+Brisbane+QLD+4000/@-27.468596,153.0208056,17z/data=!4m7!1m4!3m3!1s0x6b915a0401856ab7:0xe884a4980bd96e97!2s400+George,+400+George+St,+Brisbane+QLD+4000!3b1!3m1!1s0x6b915a0401856ab7:0xe884a4980bd96e97" target="_blank"> Upper Level 1, 400 George St, Brisbane. 4000 </a> 
+						</p>
+						<p> <strong> E: </strong>
+							<a href="#email" target="_blank"> info@restaurant.public.com
+							</a>
+						</p>
+						<p class="bold padding-top"> Opening hours </p>
+						<p class="bold padding-top"> Monday-Friday </p>
+						<p> Bar 11.30am-Late </p>
+						<p> Kitchen 11.30am-Late</p>
+						<p class="bold padding-top"> Saturday </p>
+						<p> Kitchen 5pm-11pm </p>
+						<p>Bar 5pm-midnight </p>
+						<p class=" bold padding-top"> Sunday </p>
+						<p> Closed </p>
+						<p class="italic padding-top">*Public holidays closed unless stated otherwise* </p>
+					</div>
+
+					<div class="grid-size left">
+						<div>
+							<img class="map-image" src="images/map.png" alt="map"> </img>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div><!-- parent-->
+		
+	</div> <!-- main-wrapper-->
+
+</body>
+
+<script>
+
+	document.getElementById("link").addEventListener("mouseover", mouseOver);
+	document.getElementById("link").addEventListener("mouseout", mouseOut);
+	var discover = document.getElementById("discover");
+	var menu = document.getElementById("eat");
+	var gift = document.getElementById("gift")
+	var awards = document.getElementById("awards");
+	
+	function mouseOver() 
+	{
+		document.getElementById("link").style.width = "270px";
+		document.getElementById("parent").style.marginLeft="270px";
+		
+		$(document).ready(function(){
+			$("table tr").each(function(index,value){
+			var val = $(this).find("td:eq(1) a");
+			val.css("visibility","visible");
+			});
+		});
+	}
+
+function mouseOut() 
+	{
+		document.getElementById("link").style.width = "80px";
+		document.getElementById("parent").style.marginLeft="80px";
+		$(document).ready(function(){
+			$("table tr").each(function(index,value){
+			var val = $(this).find("td:eq(1) a");
+			val.css("visibility","hidden");
+			});
+		});
+	}
+
+	$(".discover").click(function(e) {
+    e.preventDefault();
+    var aid = $(this).attr("href");
+    $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+});
+	$(".menu").click(function(e) {
+    e.preventDefault();
+    var aid = $(this).attr("href");
+    $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+});
+	$(".events").click(function(e) {
+    e.preventDefault();
+    var aid = $(this).attr("href");
+    $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+});
+	$(".awards").click(function(e) {
+    e.preventDefault();
+    var aid = $(this).attr("href");
+    $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+});
+	$(".gift").click(function(e) {
+    e.preventDefault();
+    var aid = $(this).attr("href");
+    $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+});
+
+	$(".what").click(function(e) {
+    e.preventDefault();
+    var aid = $(this).attr("href");
+    $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+});
+
+	$(".what").click(function(e) {
+    e.preventDefault();
+    var aid = $(this).attr("href");
+    $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+});
+
+
+</script>
+
+</html>
