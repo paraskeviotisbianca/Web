@@ -83,7 +83,7 @@
 							 <source src="video/video2.mp4" type="video/mp4"></source>
 						 </video>
 					</div>
-					<div   class=" center absolute white">
+					<div   class=" center absolute ">
 						<p class="size bold white border padding text-shadow"> DISCOVER SUR-LIE </p>
 						<div class=" relative button">
 							<a href="#menu"><img src="images/arrow.png" alt="button"  class="button-img"> </img> </a>
@@ -106,7 +106,7 @@
 			</div>
 			
 			<!-- Photo grid view -->
-			<div class="gallery">
+			<div class="gallery gal">
 				<h1> GALLERY </h1>
 				<!-- Title bar underline -->
 				<div class="bar">
@@ -114,43 +114,43 @@
 				</div>
 			
 				<div class="grid">
-					<div class="grid-size menu-grid left">
+					<div class="grid-size menu-grid left photo-grid">
 						<img src="images/1.jpg"> </img>
 					</div>
 					
-					<div class="grid-size menu-grid left">
+					<div class="grid-size menu-grid left photo-grid">
 						<img src="images/2.jpg"> </img>
 					</div>
 					
-					<div class="grid-size menu-grid left">
+					<div class="grid-size menu-grid left photo-grid">
 						<img src="images/3.jpg"> </img>
 					</div>
 					
-					<div class="grid-size menu-grid left">
+					<div class="grid-size menu-grid left photo-grid">
 						<img src="images/4.jpg"> </img>
 					</div>
 					
-					<div class="grid-size menu-grid left">
+					<div class="grid-size menu-grid left photo-grid">
 						<img src="images/5.jpg"> </img>
 					</div>
 					
-					<div class="grid-size menu-grid left">
+					<div class="grid-size menu-grid left photo-grid">
 						<img src="images/6.jpg"> </img>
 					</div>
 					
-					<div class="grid-size menu-grid left">
+					<div class="grid-size menu-grid left photo-grid">
 						<img src="images/7.jpg"> </img>
 					</div>
 					
-					<div class="grid-size menu-grid left">
+					<div class="grid-size menu-grid left photo-grid">
 						<img src="images/8.jpg"> </img>
 					</div>
 					
-					<div class="grid-size menu-grid left">
+					<div class="grid-size menu-grid left photo-grid">
 						<img src="images/9.jpg"> </img>
 					</div>
 					
-					<div class="grid-size menu-grid left">
+					<div class="grid-size menu-grid left photo-grid">
 						<img src="images/10.jpg"> </img>
 					</div>
 				</div>
@@ -176,7 +176,7 @@
 			</div>
 
 			<!-- grid -->
-			<div class="gallery">
+			<div class="gallery events-gallery">
 				<div class="grid ">
 
 					<div class="white bold italic left ">
@@ -290,7 +290,7 @@
 				</div>
 			</div>
 			
-			<div class="gallery top">
+			<div class="gallery top awards-gallery">
 				<div class="">
 					<div class="grid-size left">
 					<table class="awards">
@@ -361,7 +361,7 @@
 				</div>
 			</div>
 			
-			<div class="gallery">
+			<div class="gallery whats-on">
 				<p class="white italic"> Submissions for this form are currently disabled - please try again later.</p>
 			</div>
 			
@@ -383,7 +383,7 @@
 				</div>
 			</div>
 			
-			<div class="gallery">
+			<div class="gallery gift-scroll">
 				<div class="grid">
 					<div class="grid-size left white italic align-text-center">
 						<p> A Public Gift Voucher is the ideal gift to celebrate a special occasion such as a Birthday, Anniversary or Wedding and also makes that perfect thank you gift.  </p>
@@ -420,9 +420,9 @@
 				</div>
 			</div>
 			
-			<div class="gallery">
+			<div class="gallery contact-scroll">
 				<div class="grid">
-					<div class="grid-size left white align-text-center line-height">
+					<div class="grid-size left white align-text-center line-height info-contact">
 						<p class="padding-top"> <strong>P:</strong> 07 3210 2288  </p>
 						<p> <strong>A: </strong> 
 							<a href="https://www.google.com.au/maps/place/400+George,+400+George+St,+Brisbane+QLD+4000/@-27.468596,153.0208056,17z/data=!4m7!1m4!3m3!1s0x6b915a0401856ab7:0xe884a4980bd96e97!2s400+George,+400+George+St,+Brisbane+QLD+4000!3b1!3m1!1s0x6b915a0401856ab7:0xe884a4980bd96e97" target="_blank"> Upper Level 1, 400 George St, Brisbane. 4000 </a> 
@@ -460,13 +460,53 @@
 
 <script>
 
+	//declare events
 	document.getElementById("link").addEventListener("mouseover", mouseOver);
 	document.getElementById("link").addEventListener("mouseout", mouseOut);
-	var discover = document.getElementById("discover");
-	var menu = document.getElementById("eat");
-	var gift = document.getElementById("gift")
-	var awards = document.getElementById("awards");
+
 	
+	//animations for clicking relative buttons inside divs
+	$("#discover a").click(function(e) {
+    e.preventDefault();
+	alert("The button was clicked.");
+});
+
+	$("#menu a").click(function(e) {
+    e.preventDefault();
+	//gallery class is on top
+	 $('html, body').animate({scrollTop: $('.gal').offset().top -130 }, 'slow');
+});
+
+	$("#events a").click(function(e) {
+    e.preventDefault();
+	//gallery class is on top
+	 $('html, body').animate({scrollTop: $('.events-gallery').offset().top -130 }, 'slow');
+});
+	
+	$("#awards a").click(function(e) {
+    e.preventDefault();
+	//gallery class is on top
+	 $('html, body').animate({scrollTop: $('.awards-gallery').offset().top -130 }, 'slow');
+});
+
+	$("#what a").click(function(e) {
+    e.preventDefault();
+	//gallery class is on top
+	 $('html, body').animate({scrollTop: $('.whats-on').offset().top -130 }, 'slow');
+});
+	$("#gift a").click(function(e) {
+    e.preventDefault();
+	//gallery class is on top
+	 $('html, body').animate({scrollTop: $('.gift-scroll').offset().top -130}, 'slow');
+});
+	$("#contact a").click(function(e) {
+    e.preventDefault();
+	//gallery class is on top
+	 $('html, body').animate({scrollTop: $('.contact-scroll').offset().top -130}, 'slow');
+});
+	
+	
+	//if the mouse is over the menu then slide out and push content
 	function mouseOver() 
 	{
 		document.getElementById("link").style.width = "270px";
@@ -480,6 +520,7 @@
 		});
 	}
 
+	//if the mouse is out then slide back and get to normal
 function mouseOut() 
 	{
 		document.getElementById("link").style.width = "80px";
@@ -492,6 +533,7 @@ function mouseOut()
 		});
 	}
 
+	//animate scroll for side menu
 	$(".discover").click(function(e) {
     e.preventDefault();
     var aid = $(this).attr("href");
