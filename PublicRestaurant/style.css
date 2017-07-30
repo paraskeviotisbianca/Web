@@ -1,3 +1,184 @@
+/*MEDIA QUERRYES ------------------------------------------------- */
+
+@media screen and (max-width: 900px) and (min-width: 700px)/* if the screen is less than 900px and grater than 700px */
+{
+		.main-wrapper
+		{
+			width:auto;
+		}	
+		
+}	
+@media screen and (max-width: 700px) and (min-width: 200px)/* if the screen is less than 700px and grater 200px */
+{
+		.main-wrapper
+		{
+			width:auto;
+		}	
+		
+}	
+@media all and (max-width: 700px) and (min-width: 200px)
+{
+	#parent
+	{
+		width:100%;
+		position:absolute;
+		left:-80px;
+	}
+	#parent .videoDiv video
+	{
+		min-width:200px;
+		max-width:700px;
+	}
+	#link
+	{
+		display:none;
+	}
+	#discover p, #menu p, #events p, #awards p, #what p, #gift p, #contact p
+	{
+		font-size:15px;
+	}
+
+	#menu .p, #contact .p
+	{
+		display:none;
+	}
+	
+	#parent .center
+	{
+		width:250px;
+	}
+	
+	#parent .parallax
+	{
+		height:300px;
+	}
+
+	#parent .gallery .grid-size
+	{
+		width:100%;
+	}
+    #parent .gallery .photo-grid
+	{
+		width:50%;
+	}
+	#parent .menu-grid img
+	{
+		height:140px;
+
+	}
+	
+	#parent h1
+	{
+		font-size:25px;
+	}
+	#parent .gallery p,  #parent .gallery .guests
+	{
+		font-size:10px;
+	}
+	#parent .grid table img
+	{
+		height:200px;
+	}
+
+	#parent .footer-logo
+	{
+		height:100px;
+	}
+	#parent .delimiter
+	{
+		height:50px;
+		width:50px;
+	}
+	#parent .map-image{display:none;}
+	#parent .info-contact
+	{
+		width:100%;
+	}
+
+	#parent .btn-input button
+	{
+			height:20px;
+			width: 250px;
+			font-size: 10px;
+			margin-left:-50px;
+			
+	}
+	
+}
+
+@media all and (max-width: 900px) and (min-width: 700px)
+{
+
+	#parent
+	{
+		width:100%;
+		position:absolute;
+		left:-80px;
+	}
+		#parent .videoDiv video
+	{
+		min-width:700px;
+		max-width:900px;
+	}
+	#link
+	{
+		display:none;
+	}
+	#discover p, #menu p, #events p, #awards p, #what p, #gift p, #contact p
+	{
+		font-size:20px;
+	}
+
+	#menu .p, #contact .p
+	{
+		font-size:15px;
+	}
+	
+	#parent .center
+	{
+		width:450px;
+	}
+	
+	#parent .parallax
+	{
+		height:450px;
+	}
+	
+	#parent .grid-size
+	{
+		width:auto;
+	}
+	#parent h1
+	{
+		font-size:25px;
+	}
+	#parent .gallery p,  #parent .gallery .guests
+	{
+		font-size:10px;
+	}
+	#parent .grid table img
+	{
+		height:200px;
+	}
+
+	#parent .footer-logo
+	{
+		height:100px;
+	}
+	#parent .delimiter
+	{
+		height:50px;
+		width:50px;
+	}
+	#parent .map-image{display:none;}
+	#parent .info-contact
+	{
+		width:100%;
+	}
+}
+
+
+
 
 /* ANIMATIOS KEYFRAMES ------------------------------------------------- */
 @keyframes mymove {
@@ -435,6 +616,14 @@ padding:10px;
 .gallery a
 {
 	color:#07cfbd;
+}
+#contact
+{
+	top:100px;
+}
+.contact-scroll
+{
+	margin-top:100px;
 }
 /*............................................ HOVER EFFECTS and transitions.................................*/
 
